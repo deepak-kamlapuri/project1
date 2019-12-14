@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width , initial-scale=1.0" >
+
+	<title>www.menu.com</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<style type="text/css">
+		
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body{
+			font-size: 20px;
+			overflow-x: hidden;
+			color: white;
+			text-transform: uppercase;
+
+		}
+		.bg{
+			background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('food.png');
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			width: 100%;
+			height: 100vh;
+
+
+		}
+	.clearfix::after{
+		content: ".";
+		visibility: hidden;
+		display: block;
+		height: 0px;
+		clear: both;
+	}
+		.row{
+			 max-width:1180px;
+		      margin:0 auto;
+			
+
+		}
+		.logo{
+			color: white;
+			height: 120px;
+			width: auto;
+			float: left;
+			margin-top:  60px;
+			margin-left: 20px;
+			font-size: 30px;
+			
+		}
+		.list{
+			float: right;
+			margin-top: 60px;
+			
+		}
+		.list li{
+			display: inline-block;
+			list-style: none;
+			margin: 0 20px;
+		}
+		.list li a{
+			color: white;
+			padding: 5px 0;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-size: 90%;
+			font-weight: 100;
+		}
+		.list li a:hover{
+			border-bottom: 2px solid #bf55ec ;
+		}
+		.main-contain{
+			 width:1180px;
+			 position: absolute;
+			 /* border: 1px solid black; */
+			 top: 55%;
+			 left: 50%;
+			 transform: translate(-50% , -50%);
+		}
+		h1{
+			font-size: 240%;
+			word-spacing: 5px;
+			letter-spacing: 3px;
+			margin-bottom: 20px;
+			font-weight: lighter;
+		}
+		.btn{
+			text-decoration: none;
+			display: inline-block;
+			font-weight: lighter;
+			border-radius: 200px;
+			transition: background-color 0.2s, border 0.2s, color 0.2s;
+			width: 200px;
+			height: 40px;
+			text-align: center;
+			line-height: 40px;
+
+		}
+		.btn-full{
+			background-color: transparent;
+			color: #bf55ec;
+			margin-right: 15px;
+			border: 1px solid  #bf55ec ;
+		}
+		.btn-null{
+			background-color: transparent;
+			color: #fff;
+			margin-right: 15px;
+			border: 1px solid  #fff ;
+		}
+		.btn-full:hover{
+			background-color: white;
+			color: #bf55ec;
+		}
+		.btn-null:hover{
+			
+			background-color:#bf55ec;
+		}
+		.color-change{
+			animation: deepak 1s infinite;
+		}
+		@keyframes deepak{
+			0%{color: red;}
+			25%{color:#bf55ec;}
+			50%{color: yellow;}
+			100%{color:#bf55ec;}
+		}
+		.mobile{
+			display: none;
+		}
+
+		/* responsive */
+		@media only screen and (max-width: 1180px){
+			.main-contain{
+				width: 100%;
+				padding: 0 2%;
+			}
+		}
+		@media only screen and (max-width: 998px){
+			h1{font-size: 200%;}
+		}
+		@media only screen and (max-width: 768px){
+			h1{font-size: 180%;}
+			
+			.list{display: none;}
+			
+			.mobile{
+			display: inline-block;
+			float: right;
+			margin-top: 30px;
+			color: #fff;
+			margin-right: 20px;
+		}
+		.list{
+			float: left;
+		}
+		.list li{
+			
+			display: block;
+			margin-top: 10px;
+		}
+
+		}
+		@media only screen and (max-width: 480px){
+.btn-full{
+       margin-bottom: 20px;
+}
+h1{
+				font-size: 150%;
+			}
+		}
+		@media only screen and (max-width: 320px){
+
+
+h1{
+				font-size: 70%;
+				text-align: center;
+				margin-top: 150px;
+			}
+			.full{
+					text-align: center;
+					margin-top: 100px;
+			}
+			.list li{
+			
+			font-size: 50%;
+			margin-right: 30px;
+		}
+		.logo{
+			line-height: 30px;
+		}
+
+			
+		}
+
+		
+	</style>
+</head>
+<body>
+	<header id="header" class="bg">
+		 <nav>
+		 	<div class="row clearfix">
+		 	<div class="logo">
+		 		deepak
+		 	</div>
+		 	<ul class="list animated slideInDown" id="check">
+		 		<li><a href="#" title="">CAKE DELVERY</a></li>
+		 		<li><a href="#" title="">HOW TO ORDER</a></li>
+		 		<li><a href="#" title="">CHECK MORE</a></li>
+		 		<li><a href="#" title="">SIGN UP</a></li>
+		 		
+		 	</ul>
+		 	<a href="#" title="" class="mobile"  onclick="slideshow()"><i class="fa fa-bars"></i></a>
+		 	</div>
+		 </nav>
+		 <div class="main-contain">
+		 <h1>welcome to <span class="color-change">deepak cafe</span>.<br> house of cake lover oo yes.</h1>
+		 <div class="full">
+		 	
+		 
+		 <a href="#" class="btn btn-full">click to order</a>
+		 <a href="#" class="btn btn-null">show me more</a>
+		  </div>
+		</div>
+	</header>
+
+
+
+<script>
+	function slideshow(){
+         var x= document.getElementById('check');
+         if(x.style.display==="none"){
+         	x.style.display="block";
+         }
+         else{
+         	x.style.display="block";
+         }	}
+</script>
+	
+</body>
+</html>
